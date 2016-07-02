@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: fludapp_deb
+  database: floodapp_dev
   pool: 32
   username: your_username
   password: 'your_password'
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: fludapp_test
+  database: floodapp_test
   pool: 5
   username: your_username
   password: 'youe_password'
