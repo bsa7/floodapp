@@ -1,0 +1,6 @@
+ru:
+  layouts:
+    application:
+      title: floodapp - Тест
+      search: Поиск фраз
+      sentences_select: Выбор фраз

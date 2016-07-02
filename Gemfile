@@ -14,6 +14,7 @@ gem 'puma', '~> 2.15.3'
 gem 'factory_girl'
 gem 'faker'
 gem 'unicode'
+gem 'haml'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
