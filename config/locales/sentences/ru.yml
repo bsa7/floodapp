@@ -4,3 +4,7 @@ ru:
       add_random_sentence: Добавить случайную фразу
       sentences_flow: Поток фраз
       title: Выбор произвольных фраз
+  shared:
+    flood_app_links:
+      sentences_select: Выбор случайных фраз
+      github_repo: Репозиторий на GitHub

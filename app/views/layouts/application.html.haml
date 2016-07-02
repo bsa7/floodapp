@@ -22,15 +22,11 @@
               %input#text-search.mdl-textfield__input{name: 'sample', type: 'text'}/
         .mdl-layout__header-row
           .mdl-layout-spacer
-          %nav.mdl-navigation
-            %a.mdl-navigation__link{href: sentences_sampler_path}
-              = t('.sentences_select')
+          = render 'shared/flood_app_links'
       .mdl-layout__drawer
         %span.mdl-layout-title
           = t('.title')
-        %nav.mdl-navigation
-          %a.mdl-navigation__link{href: sentences_sampler_path}
-            = t('.sentences_select')
+        = render 'shared/flood_app_links'
       %main.mdl-layout__content
         .mdl-layout__tab-panel.is-active
           = yield

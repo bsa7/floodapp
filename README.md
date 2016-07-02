@@ -12,3 +12,7 @@ After populate visit:
 ```
     /sentences/sampler
 ```
+
+See this in action:
+
+[http://floodapp.xn--h1amiy.xn--p1ai/sentences/sampler](http://floodapp.исчо.рф/sentences/sampler)
