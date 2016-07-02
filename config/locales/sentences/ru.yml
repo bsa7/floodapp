@@ -6,5 +6,5 @@ ru:
       title: Выбор произвольных фраз
   shared:
     flood_app_links:
-      sentences_select: Выбор случайных фраз
+      add_random_sentence: Добавить случайную фразу
       github_repo: Репозиторий на GitHub
