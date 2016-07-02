@@ -5,6 +5,10 @@ class Sentence < ActiveRecord::Base
     else
       result = Sentence.order('RANDOM()').limit(1).pluck(:id, :text).first
     end
-    result
+    icon_name = Icon.order('RANDOM()').limit(1).pluck(:name).first
+    {
+      sentence: result,
+      random_icon: icon_name
+    }
   end
 end

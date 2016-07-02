@@ -12,6 +12,12 @@ namespace :db do
         Sentence.create!(text: text.capitalize)
       end
     end
+    puts 'Creating Material icon names'
+    ActiveRecord::Base.transaction do
+      I18n.t('faker.icon.names').each do |icon_name|
+        Icon.create!(name: icon_name)
+      end
+    end
     puts "Populate completed."
   end
 end

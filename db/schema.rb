@@ -11,17 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160702090519) do
+ActiveRecord::Schema.define(version: 20160702185734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "icons", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "icons", ["name"], name: "index_icons_on_name", using: :btree
 
   create_table "sentences", force: :cascade do |t|
     t.string   "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  add_index "sentences", ["text"], name: "index_sentences_on_text", using: :btree
 
 end
