@@ -9,15 +9,17 @@
   %button#btn2.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--icon{'data-upgraded': ',MaterialButton,MaterialRipple'}
     %i.material-icons more_vert
     %span.mdl-button__ripple-container
-      %span.mdl-ripple.is-animating{style: 'width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(23px, 12px);'}
-  .mdl-menu__container.is-upgraded{style: 'right: 8px; top: 40px; width: 124px; height: 160px;'}
-    .mdl-menu__outline.mdl-menu--bottom-right{style: 'width: 124px; height: 160px;'}
-    %ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right{'data-upgraded': ',MaterialMenu', for: 'btn2', style: 'clip: rect(0px 124px 0px 124px);'}
+      %span.mdl-ripple.is-animating
+  .mdl-menu__container.is-upgraded
+    .mdl-menu__outline.mdl-menu--bottom-right
+    %ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right{'data-upgraded': ',MaterialMenu', for: 'btn2'}
       %li.mdl-menu__item{tabindex: '-1'} Lorem
       %li.mdl-menu__item{disabled: 'disabled', tabindex: '-1'} Ipsum
       %li.mdl-menu__item{tabindex: '-1'} Dolor
 
-%a#add-random-sentence.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-color--accent.mdl-color-text--accent-contrast{'data-upgraded': ',MaterialButton,MaterialRipple', href: 'https://github.com/google/material-design-lite/blob/master/templates/text-only/', target: '_blank'}
+%a#add-random-sentence.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-color--accent.mdl-color-text--accent-contrast{'data-upgraded': ',MaterialButton,MaterialRipple',
+  href: 'https://github.com/google/material-design-lite/blob/master/templates/text-only/',
+  target: '_blank' }
   = t('.add_random_sentence')
   %span.mdl-button__ripple-container
     %span.mdl-ripple
