@@ -4,25 +4,21 @@
     %meta{ content: 'text/html; charset=UTF-8', 'http-equiv': 'Content-Type'}/
     %title Floodapp
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': true
-    :css
-      .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
-        padding-right: 0;
-      }
     %link{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
     = javascript_include_tag 'application', 'data-turbolinks-track': true
     = csrf_meta_tags
   %body
-    .demo-layout-waterfall.mdl-layout.mdl-js-layout
+    .layout-waterfall.mdl-layout.mdl-js-layout
       %header.mdl-layout__header.mdl-layout__header--waterfall
         .mdl-layout__header-row
           %span.mdl-layout-title
             = t('.title')
           .mdl-layout-spacer
           .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
-            %label.mdl-button.mdl-js-button.mdl-button--icon{for: 'waterfall-exp'}
+            %label.mdl-button.mdl-js-button.mdl-button--icon{for: 'text-search'}
               %i.material-icons><search
             .mdl-textfield__expandable-holder
-              %input#waterfall-exp.mdl-textfield__input{name: 'sample', type: 'text'}/
+              %input#text-search.mdl-textfield__input{name: 'sample', type: 'text'}/
         .mdl-layout__header-row
           .mdl-layout-spacer
           %nav.mdl-navigation
@@ -35,6 +31,5 @@
           %a.mdl-navigation__link{href: sentences_sampler_path}
             = t('.sentences_select')
       %main.mdl-layout__content
-        .page-content
+        .mdl-layout__tab-panel.is-active
           = yield
-

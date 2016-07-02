@@ -15,6 +15,9 @@ gem 'factory_girl'
 gem 'faker'
 gem 'unicode'
 gem 'haml'
+gem 'flavour_saver', '0.3.8'
+gem 'handlebars_assets', '0.23.0'
+gem 'handlebars', '0.8.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

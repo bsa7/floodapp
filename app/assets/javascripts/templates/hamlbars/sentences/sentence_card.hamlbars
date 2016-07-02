@@ -1,0 +1,4 @@
+.section__circle-container.mdl-cell.mdl-cell--2-col.mdl-cell--1-col-phone
+  .section__circle-container__circle.mdl-color--primary{ data: { id: '{{this.[0]}}'}}
+.section__text.mdl-cell.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--3-col-phone
+  {{this.[1]}}

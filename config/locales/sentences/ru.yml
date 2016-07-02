@@ -1,4 +1,6 @@
 ru:
   sentences:
     sampler:
+      add_random_sentence: Добавить случайную фразу
+      sentences_flow: Поток фраз
       title: Выбор произвольных фраз
