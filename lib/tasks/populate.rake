@@ -1,5 +1,5 @@
 namespace :db do
-  desc "Fill database with sample data"
+  desc 'Fill database with sample data'
   task :populate, [:environment] do
     count = ENV['count'].to_i || 1000
     puts 'Resetting the database'
@@ -7,7 +7,7 @@ namespace :db do
     Faker::Config.locale = I18n.locale || :ru
     puts "Creating #{count} #{Faker::Config.locale} phrases:"
     ActiveRecord::Base.transaction do
-      count.times do |n|
+      count.times do
         text = Faker::Lorem.words(4..10).join(' ')
         Sentence.create!(text: text.capitalize)
       end
@@ -18,6 +18,6 @@ namespace :db do
         Icon.create!(name: icon_name)
       end
     end
-    puts "Populate completed."
+    puts 'Populate completed.'
   end
 end
