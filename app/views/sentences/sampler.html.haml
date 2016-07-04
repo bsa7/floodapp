@@ -7,16 +7,6 @@
     .mdl-card__actions
       %a#add-random-sentence-link.mdl-button{href: '#'}
         = t('.add_random_sentence')
-  %button#btn2.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--icon{'data-upgraded': ',MaterialButton,MaterialRipple'}
-    %i.material-icons more_vert
-    %span.mdl-button__ripple-container
-      %span.mdl-ripple.is-animating
-  .mdl-menu__container.is-upgraded
-    .mdl-menu__outline.mdl-menu--bottom-right
-    %ul.mdl-menu.mdl-js-menu.mdl-menu--bottom-right{'data-upgraded': ',MaterialMenu', for: 'btn2'}
-      %li.mdl-menu__item{tabindex: '-1'} Lorem
-      %li.mdl-menu__item{disabled: 'disabled', tabindex: '-1'} Ipsum
-      %li.mdl-menu__item{tabindex: '-1'} Dolor
 
 %a#add-random-sentence.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-color--accent.mdl-color-text--accent-contrast{'data-upgraded': ',MaterialButton,MaterialRipple',
   href: sentences_sampler_path }
